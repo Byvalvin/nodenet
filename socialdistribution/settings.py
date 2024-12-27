@@ -28,7 +28,8 @@ SECRET_KEY = "django-insecure-ah_*a0ugyts1(%h#j3b_v#58)^2)c@k1eos!4&@o8(y*0(d-*z
 DEBUG = True
 
 # ALLOWED_HOSTS = ["node-net-46d70235bc29.herokuapp.com"]
-ALLOWED_HOSTS = ["connection-net-e444016a9ef0.herokuapp.com", "node-net-46d70235bc29.herokuapp.com"]
+# ALLOWED_HOSTS = ["connection-net-e444016a9ef0.herokuapp.com", "node-net-46d70235bc29.herokuapp.com"]
+
 
 # Application definition
 
