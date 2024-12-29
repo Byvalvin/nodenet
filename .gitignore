@@ -1,11 +1,23 @@
-venv
-nnvenv
+# Virtual environments
+venv/
+nnvenv/
+
+# Database
 db.sqlite3
+
+# OS files
 .DS_Store
-.vscode
-__pycache__
-*.py[cod]nnvenv/
+
+# IDE files
+.vscode/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+
+# Django media and static files
 media/
 staticfiles/
 
+# Environment variables
 .env
