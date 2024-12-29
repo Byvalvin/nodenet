@@ -23,8 +23,8 @@ django-rest-swagger==2.2.0
 django-tailwind==3.6.0
 djangorestframework==3.14.0
 drf-yasg==1.21.7
-Flask==3.0.0
 future==0.18.2
+gunicorn
 idna==3.4
 importlib_metadata==8.5.0
 inflection==0.5.1
