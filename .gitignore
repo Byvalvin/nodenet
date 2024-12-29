@@ -6,3 +6,6 @@ db.sqlite3
 __pycache__
 *.py[cod]nnvenv/
 media/
+staticfiles/
+
+.env
