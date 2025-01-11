@@ -1,63 +1,39 @@
+{% load static %}
 {% load custom_filters %}
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a
-    class="navbar-brand text-3xl font-bold"
-    id="myProfile"
-    href="{% url 'stream' %}"
-    >{{request.user}}</a
-  >
-  <div class="navbar-nav">
-    <a class="nav-link active" aria-current="page" href="{% url 'stream' %}"
-      >Stream</a
-    >
-    <a
-      class="nav-link active"
-      aria-current="page"
-      href="{% url 'private_posts' %}"
-      >Private posts</a
-    >
-    <a class="nav-link active" aria-current="page" href="{% url 'friends_posts' %}">Friends posts</a>
-    <a
-      class="nav-link active"
-      aria-current="page"
-      href="{% url 'author_followers' request.user.id2 %}"
-      >Followers</a
-    >
+  <div class="container-fluid">
+    <!-- Left Side: Logo linking to the Stream -->
+    <a class="navbar-brand" href="{% url 'stream' %}">
+      <img src="{% static 'logo.png' %}" alt="Logo" class="logo">
+    </a>
 
-    <a
-      class="nav-link active"
-      aria-current="page"
-      href="{% url 'author_inbox' request.user.id2 %}"
-      >Inbox</a
-    >
-    <a
-      class="nav-link active"
-      aria-current="page"
-      href="{% url 'authors' %}"
-      >Authors</a
-    >
-    <a
-      class="nav-link active"
-      aria-current="page"
-      href="{% url 'unlisted_posts' %}"
-      >Unlisted</a
-    >
-    <a class="nav-link active" aria-current="page" href="{% url 'new_post' %}"
-      >New</a
-    >
-  </div>
-  <div class="d-flex ms-auto navbar-nav">
-    <a
-      class="nav-link active"
-      aria-current="page"
-      href="{% url 'get_author' request.user.id2 %}"
-      >Profile</a
-    >
-    <a class="nav-link active" aria-current="page" href="{% url 'logout' %}"
-      >Logout</a
-    >
+    <!-- Right Side: Username and profile link -->
+    <div class="navbar-nav ms-auto">
+      <!-- Profile button (linked to the profile page) -->
+      <a class="nav-link active username" href="{% url 'get_author' request.user.id2 %}">{{ request.user }}</a>
+
+      <!-- Inbox Button -->
+      <a class="nav-link active" href="{% url 'author_inbox' request.user.id2 %}">Inbox</a>
+
+      <!-- Logout Button -->
+      <a class="nav-link active" href="{% url 'logout' %}">Logout</a>
+    </div>
   </div>
 </nav>
-</html>
 
+<!-- Inline CSS for navbar styles -->
+<style>
+  /* Logo Styling: Increase size and make it rounded */
+  .navbar-brand .logo {
+    max-height: 60px; /* Increase logo size */
+    border-radius: 50%; /* Round the logo */
+    object-fit: contain; /* Ensure the logo doesn't stretch */
+  }
+
+  /* Username Styling: Make username bolder and slightly bigger */
+  .navbar-nav .username {
+    font-weight: bold;  /* Make the username bold */
+    font-size: 1.2rem;  /* Make the username slightly bigger */
+  }
+</style>

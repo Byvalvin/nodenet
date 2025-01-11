@@ -19,5 +19,9 @@ __pycache__/
 media/
 staticfiles/
 
+# Ignore compiled static files
+*.css
+*.js
+
 # Environment variables
 .env
