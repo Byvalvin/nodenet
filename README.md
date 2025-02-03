@@ -4,7 +4,7 @@ Welcome to NodeNet! This web application allows users to sign up, log in, post i
 It provides a platform for users to connect and share moments with their friends and followers.
 This project was a part of CMPUT 404: Web Applications and Architecture and was based on Social Distribution. 
 
-- [Deployed website OLD](https://node-net-46d70235bc29.herokuapp.com/nodenet/login/?next=/nodenet/)
+- [Deployed website (Dead)](https://node-net-46d70235bc29.herokuapp.com/nodenet/login/?next=/nodenet/)
 - [Project requirements](https://github.com/uofa-cmput404/project-socialdistribution/blob/master/project.org)
 
 - [RE-Deployed website](https://nodenet-fb7f.onrender.com)
